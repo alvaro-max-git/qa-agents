@@ -1,0 +1,43 @@
+{
+  "name": "ui-testing",
+  "version": "1.0.0",
+  "description": "UI Testing with TypeScript and Playwright",
+  "keywords": [
+    "testing",
+    "playwright"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adequatica/ui-testing"
+  },
+  "author": "Andrey Enin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@playwright/test": "1.52.0",
+    "zod": "3.25.40"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.27.0",
+    "@stylistic/eslint-plugin-ts": "4.4.0",
+    "@types/node": "22.15.0",
+    "@typescript-eslint/parser": "8.33.0",
+    "eslint": "9.27.0",
+    "eslint-config-prettier": "10.1.5",
+    "eslint-plugin-prettier": "5.4.1",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "prettier": "3.5.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.33.0"
+  },
+  "scripts": {
+    "format": "npx prettier --write .",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "test": "playwright test",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "test:install-deps": "playwright install chromium && playwright install-deps chromium"
+  }
+}

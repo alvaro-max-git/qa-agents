@@ -1,0 +1,12 @@
+# --- Global OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Node / JS / TS (Playwright/Appium JS) ---
+node_modules/
+test-results/
+playwright-report/
+package-lock.json
