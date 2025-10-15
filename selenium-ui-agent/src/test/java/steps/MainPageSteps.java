@@ -19,6 +19,11 @@ public class MainPageSteps {
         main.goToSomeMiniApp();
     }
 
+    @When("I navigate to the Verify Your Account Mini App")
+    public void navigateToVerifyYourAccountMiniApp() {
+        main.goToVerifyYourAccountMiniApp();
+    }
+
     @Then("I should be in the Dynamic Table app page")
     public void iShoulBeInTheAppPage() {
         

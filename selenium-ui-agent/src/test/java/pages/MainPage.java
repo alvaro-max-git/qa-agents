@@ -9,6 +9,8 @@ public class MainPage extends BasePage {
     // Ejemplos de localizadores genéricos que suelen existir en la home:
     private final By siteHeader = By.cssSelector("header, .site-header, .navbar, .site-title");
     private final By anyCard = By.cssSelector("a, article, .card, .tile");
+    private final By dynamicTableCard = By.cssSelector("a[href='/apps/dynamic-table/']");
+    private final By verifyYourAccountCard = By.cssSelector("a[href='/apps/verify-account/']");
 
 
     @FindBy(tagName = "title")
@@ -42,6 +44,14 @@ public class MainPage extends BasePage {
 
     public void goToSomeMiniApp() {
         someAppCard.click();
+    }
+
+    public void goToDynamicTableMiniApp() {
+        click(dynamicTableCard);
+    }
+
+    public void goToVerifyYourAccountMiniApp() {
+        click(verifyYourAccountCard);
     }
 
     private void tryClick(By locator) {
